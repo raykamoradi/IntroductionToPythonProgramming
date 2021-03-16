@@ -1,2 +1,2 @@
-def Area(b,h):
-  return b*h/2
+def Area(x,h):
+  return x*h/2
