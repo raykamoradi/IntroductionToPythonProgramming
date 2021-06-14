@@ -3,10 +3,12 @@ def func2(x):
     i = 0
     Value = 0
     HelperVal = 0
+    FloatHelper = 0
     while i < len(x):
         if(x[i] != "."):
             Value = Value +  (HelperList.index(x[i]) * (10 ** ((len(x) -2 - i) + HelperVal))) 
         else:    
+            FloatHelper = i
             HelperVal = 1   
         i += 1
-    return Value 
+    return Value/ (10 ** (len(x) - (FloatHelper + 1)))
